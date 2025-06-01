@@ -26,7 +26,35 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+```
+class Beans:
+    def type(self):
+        print("Vegetable")
+
+    def color(self):
+        print("Green")
+
+class Mango:
+    def type(self):
+        print("Fruit")
+
+    def color(self):
+        print("Yellow")
+
+def func(obj):
+    obj.type()
+    obj.color()
+
+b = Beans()
+m = Mango()
+
+func(b)
+func(m)
+```
 
 ## Output
+![image](https://github.com/user-attachments/assets/082af797-b16e-4122-b19e-6beb123093dd)
+
 
 ## Result
+This program shows polymorphism. It has two classes, Beans and Mango, with the same methods that print different messages. The function func() calls these methods for any object passed to it. When Beans and Mango objects are used, the program prints their specific messages.
